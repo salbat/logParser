@@ -5,7 +5,7 @@ use File::Basename;
 use Geo::IPfree;
 
 my ($name, $path, $suffix);
-my $filename = "log.log";
+my $filename = "access.log";
 my $count, %countries;
 my $geo = Geo::IPfree->new;
 my %data = ();
