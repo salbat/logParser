@@ -13,12 +13,6 @@ my %data = ();
 
 ( $name, $path, $suffix ) = fileparse( $filename, "\.[^+.]*" );
 
-print $name."\n";
-print $path."\n";
-print $suffix."\n";
-
-print "File is ". $name.$suffix."\n";
-
 open (LOGFILE,"$filename") || die "  Error opening log file $filename.\n";
 
 while(defined($line = <LOGFILE>)) {
