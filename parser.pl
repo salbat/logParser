@@ -5,6 +5,7 @@ use File::Basename;
 
 my ($name, $path, $suffix);
 my $filename = "log.log";
+my $count;
 
 ( $name, $path, $suffix ) = fileparse( $filename, "\.[^+.]*" );
 
@@ -16,7 +17,15 @@ print "File is ". $name.$suffix."\n";
 
 open (LOGFILE,"$filename") || die "  Error opening log file $filename.\n";
 
-while($line = <LOGFILE>) {
+while(defined($line = <LOGFILE>)) {
     chomp;
-    print "$line\n";
+    #print "$line\n";
+
+
+    if ($line =~ /(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})/) {
+        $count++;
+        print "$1\n";
+    }
 }
+
+print "Total number of IP hits: $count\n";
