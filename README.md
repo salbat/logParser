@@ -1,11 +1,11 @@
 # logParser
-Apache Log Parser
+Apache Log Parser written in Perl
 
 Used libraties:
-* File::Basename;
-* Geo::IPfree;
+* `File::Basename`;
+* `Geo::IPfree`;
 
-These libraries can be easily installed using CPAN.
+These libraries can be easily installed using `CPAN`.
 
 ```bash
 
