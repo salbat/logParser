@@ -1,6 +1,22 @@
 # logParser
 Apache Log Parser
 
+Used libraties:
+* File::Basename;
+* Geo::IPfree;
+
+These libraries can be easily installed using CPAN.
+
+```bash
+
+# perl -MCPAN -e shell
+
+cpan[1]> install File::Basename
+
+cpan[2]> install Geo::IPfree
+
+```
+
 Log parser to group IP (IPv4) addresses with their total number of hits for each country IP address.
 
 Output:
