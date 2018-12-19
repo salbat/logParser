@@ -1,5 +1,5 @@
 # logParser
-Apache Log Parser written in Perl
+Apache Log Parser written in Perl..
 
 Used libraties:
 * `File::Basename`;
